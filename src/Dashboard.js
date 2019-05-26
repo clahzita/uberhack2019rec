@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
-import { InfoWindow, Marker } from 'google-maps-react';
-
 
 var googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyAUZHK6bceG5xlCdi4FdSvL_LqmdZbgvDU'
@@ -26,11 +24,11 @@ export class MapContainer extends Component {
     return (
       <Map
         google={this.props.google}
-        zoom={12}
+        zoom={14}
         style={mapStyles}
         initialCenter={{
-         lat: -8.0586432,
-         lng: -34.9874127
+         lat: -1.2884,
+         lng: 36.8233
         }}
       />
     );
@@ -38,5 +36,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBLUHIEWaYVAk1ZrSCeZWVY0n8eFvKCv1U'
+  apiKey: 'AIzaSyAUZHK6bceG5xlCdi4FdSvL_LqmdZbgvDU'
 })(MapContainer);
