@@ -11,13 +11,15 @@ const mapStyles = {
   height: '100%'
 };
 
-export class App extends Component {
+export class Sobre extends Component {
   render() {
     return (
     	<div>
     		<DrawerApp />
     		<main>
-    			<MapContainer/>
+        <div>
+          <p>SOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOBREEEEEEEEEEEEE</p>
+        </div>    			
     		</main>    		
     	</div>
 
@@ -26,4 +28,4 @@ export class App extends Component {
   }
 }
 
-export default App;
+export default Sobre;
